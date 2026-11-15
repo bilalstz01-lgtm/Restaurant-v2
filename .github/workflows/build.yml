@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Decompresser le projet
-        run: unzip -q resto_caisse.zip
+        run: unzip -q resto_caissev2.zip
       - name: Corriger printer.dart
         run: |
           sed -i 's/\.copyWith(marginAll: 2 \* PdfPageFormat\.mm);/;/' resto_caisse/lib/printer.dart
